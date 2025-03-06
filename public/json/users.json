@@ -1,0 +1,19 @@
+{
+    "users": [
+        {
+            "username": "Dolphy",
+            "email": "raybendalemagallon@example.com",
+            "status": "Active"
+        },
+        {
+            "username": "King of Curses",
+            "email": "",
+            "status": "Offline"
+        },
+        {
+            "username": "Bitch ass nigga",
+            "email": "",
+            "status": "Offline"
+        }
+    ]
+}

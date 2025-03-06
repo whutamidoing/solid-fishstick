@@ -1,0 +1,14 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: linear-gradient(45deg, #005485, #004696, #004985, rgb(0, 35, 99));
+    width: 100%;
+  }
+  .banner > h1 {
+    width: fit-content  ;
+    color: #fff;
+    font-size: 5rem;
+    font-family: zh, Arial, Helvetica, sans-serif;
+  }

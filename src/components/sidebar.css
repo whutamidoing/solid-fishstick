@@ -1,0 +1,144 @@
+.avatar-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px 0;
+
+    background: #531fb5;
+}
+.avatar-wrapper > span {
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    transition: ease 600ms;
+    max-width: 100px;
+    transform: scaleX(1);
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e00;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+.icon-blob {
+    background: #0f0;
+    position: absolute;
+    display: inline-block;
+    translate: -5px;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.sidebar > * {
+    color: #fff;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    position: sticky;
+
+    background-color: #202035;
+    height: 100vh;
+    font-family: poppins;
+    position: fixed;
+}
+#searchbar {
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    margin: 5px 0;
+    padding: 10px 0;
+    width: 100%;
+    background: #ffffff2e;
+    border: #979797 solid 1px;    
+}
+.scrollers {
+    overflow-y: scroll;
+    min-width: 65px;
+    width: fit-content;
+
+    background: #23264d;
+}
+.scrollers > a > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    transition: 600ms;
+}
+.scrollers > a > li:hover {
+    box-shadow: inset 20px 0px 12px -11px #a75e00;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: nms, 'Times New Roman', Times, serif;
+    color: #df8a00;
+    font-size: 1.5rem;
+    padding: 15px;
+    padding-left: 5px;
+
+    max-width: 250px;
+    opacity: 1;
+    transform: scaleX(1);
+    
+    transition: ease 600ms;
+}
+/*hide when not active*/
+.list-group.hidden{
+    padding: 15px 0;
+    max-width: 0;
+    overflow-x: hidden;
+    transform: scaleX(0);
+}
+.avatar-wrapper > span.hidden {
+    max-width: 0;
+    overflow-x: hidden;
+    transform: scaleX(0);
+}
+
+.list-group > li > a {
+    text-decoration: none;
+    color: inherit;
+}
+.list-group > li {
+    text-align: center;
+    border-radius: 50px;
+    background: #ffffff2e;
+    border: #979797 solid 1px;      
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 600ms;
+}
+.list-group > li:hover{
+    background: linear-gradient(90deg, #ce7f00, #ff9d00, #ffaf2f);
+    translate: 10px -5px;
+    border-left: 2px solid #d00;
+    color: #fff;
+}
+
+.list-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+/* Unknown */
+.scrollers li svg{
+    fill: #fff;
+}
+.scrollers::-webkit-scrollbar {
+    display: none;
+}
+
+.list-group::-webkit-scrollbar {
+    display: none;
+}
