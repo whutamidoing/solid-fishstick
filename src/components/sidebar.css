@@ -73,7 +73,7 @@
     aspect-ratio: 1 / 1;
     transition: 600ms;
 }
-.scrollers > a > li:hover {
+.scrollers > a > li:hover { 
     box-shadow: inset 20px 0px 12px -11px #a75e00;
 }
 
@@ -93,6 +93,19 @@
     
     transition: ease 600ms;
 }
+.list-group::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #202035, #263041, #263c52, #273c77);
+    opacity: 0;
+    transition: opacity 600ms ease-in-out;
+    z-index: -1;
+}
+.list-group:hover::before {
+    opacity: 1;
+}
+
 /*hide when not active*/
 .list-group.hidden{
     padding: 15px 0;
