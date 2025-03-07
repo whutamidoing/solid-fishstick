@@ -1,6 +1,6 @@
 import { ListGroup, Scroller } from "./ListGroup";
 import { useState, useEffect } from "react";
-import userPic from "../assets/images/15619.gif";
+import userPic from "../assets/images/image.png";
 
 interface User {
   username: string;

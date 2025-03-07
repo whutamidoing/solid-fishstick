@@ -1,10 +1,11 @@
 function Banner() {
   return (
     <>
-      <div className="banner">
-        <h1>Welcome Nigga</h1>
-      </div>
+      <div className="featured-banner"></div>
     </>
   );
 }
+
+export function Carousel() {}
+export function TopFeatured() {}
 export default Banner;
