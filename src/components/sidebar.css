@@ -19,6 +19,7 @@
     border: 2px solid #e00;
     border-radius: 50%;
     margin: 5px 10px;
+    transition: 1s ease;
 }
 .icon-blob {
     background: #0f0;
@@ -29,6 +30,10 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
+}
+
+.icon:hover{
+    transform: perspective(50px) rotateY(360deg);
 }
 
 .sidebar > * {
@@ -46,6 +51,7 @@
     height: 100vh;
     font-family: poppins;
     position: fixed;
+    z-index: 2;
 }
 #searchbar {
     color: #fff;
@@ -90,11 +96,12 @@
     max-width: 250px;
     opacity: 1;
     transform: scaleX(1);
+    overflow-y: scroll;
     
     transition: ease 600ms;
 }
 .list-group::before {
-    content: "";
+    content: "";    
     position: absolute;
     inset: 0;
     background: linear-gradient(45deg, #202035, #263041, #263c52, #273c77);

@@ -1,5 +1,6 @@
 @import url("/src/components/sidebar.css");
 @import url("/src/components/banner.css");
+@import url("/src/components/menu.css");
 
 @font-face {
   font-family: zh;
@@ -76,4 +77,5 @@ div{
 .main-content{
   flex-grow: 3;
   height: fit-content ;
+  overflow-x: hidden;
 }

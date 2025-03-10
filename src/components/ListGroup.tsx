@@ -1,9 +1,14 @@
-import { useEffect, useState } from "react";
+import HomeIcon from "../assets/icons/home.svg?react";
+import UserIcon from "../assets/icons/person.svg?react";
+import GalleryIcon from "../assets/icons/image.svg?react";
+import FavoritesIcon from "../assets/icons/favorite.svg?react";
+import ContactIcon from "../assets/icons/mail.svg?react";
 
 interface ListGroupProps {
   isHovered: boolean;
 }
 
+function Button() {}
 export function ListGroup({ isHovered }: ListGroupProps) {
   let regions = [
     { name: "Menu", link: "/menu" },
@@ -29,7 +34,10 @@ export function ListGroup({ isHovered }: ListGroupProps) {
         placeholder="This Doesn't Work"
       />
       {regions.map((region) => (
-        <li key={region.name}>
+        <li
+          key={region.name}
+          className={region.name == "Legend" ? "legend" : ""}
+        >
           <a key={region.link} href={`${region.link}`}>
             {region.name}
           </a>
@@ -40,25 +48,21 @@ export function ListGroup({ isHovered }: ListGroupProps) {
 }
 
 export function Scroller() {
-  let images = import.meta.glob("../assets/icons/*.svg", { eager: true });
-
-  let scrollerPaths = Object.values(images).map(
-    (img) => (img as { default: string }).default
-  );
-
-  const [svgs, setSvgs] = useState<string[]>([]);
-
-  useEffect(() => {
-    Promise.all(
-      scrollerPaths.map((path) => fetch(path).then((res) => res.text()))
-    ).then(setSvgs);
-  }, []);
+  let scrollers = [
+    { name: "home", link: "./Menu", svg: HomeIcon },
+    { name: "userprofile", link: "User", svg: UserIcon },
+    { name: "gallery", link: "Gallery", svg: GalleryIcon },
+    { name: "favorites", link: "Bookmarks", svg: FavoritesIcon },
+    { name: "contact", link: "https://facebook.com", svg: ContactIcon },
+  ];
 
   return (
     <ul className="scrollers">
-      {svgs.map((svg, index) => (
-        <a href="">
-          <li key={index} dangerouslySetInnerHTML={{ __html: svg }}></li>
+      {scrollers.map(({ name, link, svg: Icon }) => (
+        <a href={link} key={name}>
+          <li>
+            <Icon />
+          </li>
         </a>
       ))}
     </ul>

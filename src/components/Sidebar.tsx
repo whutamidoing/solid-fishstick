@@ -12,14 +12,14 @@ function Sidebar() {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    fetch(" /json/users.json")
+    fetch("/json/users.json")
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data.users)) {
           setUser(data.users);
         }
       })
-      .catch((error) => console.error("Error fetching user", error));
+      .catch((error) => console.error("Not working", error));
   }, []);
 
   return (

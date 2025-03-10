@@ -1,16 +1,11 @@
-import Banner from "./components/Banner";
-import Sidebar from "./components/Sidebar";
+import { Routes, Route } from "react-router-dom";
+import Menu from "./Menu";
 
 function App() {
   return (
-    <>
-      <div className="columns">
-        <Sidebar />
-        <div className="main-content">
-          <Banner />
-        </div>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Menu />} />
+    </Routes>
   );
 }
 
