@@ -53,7 +53,11 @@ export function Scroller() {
     { name: "userprofile", link: "User", svg: UserIcon },
     { name: "gallery", link: "Gallery", svg: GalleryIcon },
     { name: "favorites", link: "Bookmarks", svg: FavoritesIcon },
-    { name: "contact", link: "https://facebook.com", svg: ContactIcon },
+    {
+      name: "contact",
+      link: "https://github.com/whutamidoing/solid-fishstick",
+      svg: ContactIcon,
+    },
   ];
 
   return (

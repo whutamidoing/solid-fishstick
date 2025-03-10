@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ArrowIcon from "../assets/icons/arrow.svg?react";
+import articles from "../data/articles.json";
 
 export function TopFeatured() {
   const images = import.meta.glob("../assets/images/*", { eager: true });
@@ -33,18 +34,16 @@ export function TopFeatured() {
 }
 
 export function Carousel() {
-  const images = import.meta.glob("../assets/images/*", { eager: true });
-  const imagePaths = Object.values(images).map(
-    (img) => (img as { default: string }).default
-  );
-
   const [active, setActive] = useState(1);
-  let cards = [
-    { pick: "Top 1", imgsrc: imagePaths[0] },
-    { pick: "Top 2", imgsrc: imagePaths[1] },
-    { pick: "Top 3", imgsrc: imagePaths[2] },
-    { pick: "Top 4", imgsrc: imagePaths[3] },
-  ];
+  let topArticles = articles.articles
+    .sort((a, b) => b.popularity - a.popularity)
+    .slice(0, 4);
+
+  let cards = topArticles.map((article, index) => ({
+    pick: `Top ${index + 1}`,
+    name: article.title,
+    imgsrc: article.banner,
+  }));
 
   const nextSlide = () => {
     setActive((prev) => (prev + 1) % cards.length);
@@ -63,14 +62,14 @@ export function Carousel() {
         {cards.map((card, index) => {
           let positionClass = "";
 
-          let translateX = 0;
-          let scale = 1;
-          let opacity = 1;
+          // let translateX = 0;
+          // let scale = 1;
+          // let opacity = 1;
 
-          if (index === active) {
-          } else if (index > active) {
-          } else if (index < active) {
-          }
+          // if (index === active) {
+          // } else if (index > active) {
+          // } else if (index < active) {
+          // }
 
           if (index === active) positionClass = "card-1";
           else if (index === (active + 1) % cards.length)
@@ -84,7 +83,9 @@ export function Carousel() {
           return (
             <div className={`card ${positionClass}`} key={card.pick} style={{}}>
               <img src={card.imgsrc} alt={card.pick} />
-              <div>{card.pick}</div>
+              <div>
+                {card.pick}: <span>{card.name}</span>
+              </div>
             </div>
           );
         })}
