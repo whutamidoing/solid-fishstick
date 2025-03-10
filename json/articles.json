@@ -1,0 +1,74 @@
+{
+    "articles": [
+        {
+            "title": "Starfield Mods",
+            "platforms": ["Windows", "Xbox"],
+            "popularity": 28.4
+        },
+        {
+            "title": "Elden Ring Mods",
+            "platforms": ["Windows"],
+            "popularity": 18.6
+        },
+        {
+            "title": "Zelda: Tears of the Kingdom Review",
+            "platforms": ["Nintendo Switch"],
+            "popularity": 60.1
+        },
+        {
+            "title": "Cyberpunk 2077 Phantom Liberty",
+            "platforms": ["Windows", "PS5", "Xbox"],
+            "popularity": 45.3
+        },
+        {
+            "title": "Minecraft RTX Update",
+            "platforms": ["Windows", "Xbox"],
+            "popularity": 30.7
+        },
+        {
+            "title": "Bloodborne on PC",
+            "platforms": ["Windows", "PS5"],
+            "popularity": 12.4
+        },
+        {
+            "title": "Bloodborne on PC",
+            "platforms": ["Windows"],
+            "popularity": 12.4
+        },
+        {
+            "title": "Final Fantasy XVI DLC",
+            "platforms": ["PS5"],
+            "popularity": 33.9
+        },
+        {
+            "title": "Elden Ring Expansion",
+            "platforms": ["Windows", "PS5", "Xbox"],
+            "popularity": 25.1
+        },
+        {
+            "title": "Baldur's Gate 3 Multiplayer Guide",
+            "platforms": ["Windows", "PS5"],
+            "popularity": 38.7
+        },
+        {
+            "title": "Roblox New Features",
+            "platforms": ["Windows", "Mobile", "Xbox"],
+            "popularity": 40.2
+        },
+        {
+            "title": "Genshin Impact New Characters",
+            "platforms": ["Windows", "PS5", "Mobile"],
+            "popularity": 55.9
+        },
+        {
+            "title": "Hollow Knight Silksong Update",
+            "platforms": ["Windows", "Switch", "PS5"],
+            "popularity": 35.8
+        },
+        {
+            "title": "Genshin Impact 4.5 Update",
+            "platforms": ["Windows", "PS5", "Mobile"],
+            "popularity": 50.3
+        }
+    ]
+}
