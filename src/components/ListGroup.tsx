@@ -10,7 +10,6 @@ interface ListGroupProps {
   isHovered: boolean;
 }
 
-function Button() {}
 export function ListGroup({ isHovered }: ListGroupProps) {
   let regions = [
     { name: "Menu", link: "/menu" },

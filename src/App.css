@@ -16,7 +16,10 @@
   font-family: poppins;
   src: url(assets/fonts/Poppins-Regular.ttf);
 }
-
+@font-face {
+  font-family: montserrat;
+  src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
 /*#root {
   max-width: 1280px;
   margin: 0 auto;
