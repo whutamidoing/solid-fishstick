@@ -1,6 +1,8 @@
 @import url("/src/components/sidebar.css");
 @import url("/src/components/banner.css");
 @import url("/src/components/menu.css");
+@import url("/src/components/pages.css");
+@import url("/src/components/navbar.css");
 
 @font-face {
   font-family: zh;

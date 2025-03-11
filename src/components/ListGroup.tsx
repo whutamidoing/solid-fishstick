@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import HomeIcon from "../assets/icons/home.svg?react";
 import UserIcon from "../assets/icons/person.svg?react";
 import GalleryIcon from "../assets/icons/image.svg?react";
@@ -49,7 +51,7 @@ export function ListGroup({ isHovered }: ListGroupProps) {
 
 export function Scroller() {
   let scrollers = [
-    { name: "home", link: "./Menu", svg: HomeIcon },
+    { name: "home", link: "/Page", svg: HomeIcon },
     { name: "userprofile", link: "User", svg: UserIcon },
     { name: "gallery", link: "Gallery", svg: GalleryIcon },
     { name: "favorites", link: "Bookmarks", svg: FavoritesIcon },
@@ -63,11 +65,11 @@ export function Scroller() {
   return (
     <ul className="scrollers">
       {scrollers.map(({ name, link, svg: Icon }) => (
-        <a href={link} key={name}>
-          <li>
+        <Link to={link}>
+          <li key={name}>
             <Icon />
           </li>
-        </a>
+        </Link>
       ))}
     </ul>
   );
