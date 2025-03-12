@@ -11,17 +11,7 @@ interface ListGroupProps {
 }
 
 export function ListGroup({ isHovered }: ListGroupProps) {
-  let regions = [
-    { name: "Menu", link: "/menu" },
-    { name: "Wish Simulator", link: "/johto" },
-    { name: "Hoenn", link: "/hoenn" },
-    { name: "Sinnoh", link: "/sinnoh" },
-    { name: "Unova", link: "/unova" },
-    { name: "Kalos", link: "/kalos" },
-    { name: "Alola", link: "/alola" },
-    { name: "Galar", link: "/galar" },
-    { name: "Legend", link: "/legend" },
-  ];
+  let regions = [{ name: "Wish Simulator", link: "/wish-sim" }];
 
   const message = regions.length === 0 ? <p>No Regions found</p> : null;
 

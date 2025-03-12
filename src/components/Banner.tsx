@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ArrowIcon from "../assets/icons/arrow.svg?react";
 import articles from "../data/articles.json";
+import { Link } from "react-router-dom";
 
 export function TopFeatured() {
   const images = import.meta.glob("../assets/images/*", { eager: true });
@@ -41,10 +42,13 @@ export function Carousel() {
 
   let cards = topArticles.map((article, index) => ({
     pick: `Top ${index + 1}`,
-    name: article.title,
-    imgsrc: article.banner,
+    title: article.title,
+    popularity: article.popularity,
+    platforms: article.platforms,
+    banner: article.banner,
+    link: article.link,
+    contentPath: article.contentPath,
   }));
-
   const nextSlide = () => {
     setActive((prev) => (prev + 1) % cards.length);
   };
@@ -61,7 +65,6 @@ export function Carousel() {
       <div className="carousel-wrapper">
         {cards.map((card, index) => {
           let positionClass = "";
-
           // let translateX = 0;
           // let scale = 1;
           // let opacity = 1;
@@ -81,12 +84,31 @@ export function Carousel() {
           for (var i = index + 1; i < cards.length; i++) {}
 
           return (
-            <div className={`card ${positionClass}`} key={card.pick} style={{}}>
-              <img src={card.imgsrc} alt={card.pick} />
-              <div>
-                {card.pick}: <span>{card.name}</span>
+            <Link
+              key={card.pick}
+              to={card.link}
+              state={{
+                article: {
+                  title: card.title,
+                  link: card.link,
+                  banner: card.banner,
+                  platform: card.platforms,
+                  contentPath: card.contentPath,
+                  popularity: card.popularity,
+                },
+              }}
+            >
+              <div
+                className={`card ${positionClass}`}
+                key={card.pick}
+                style={{}}
+              >
+                <img src={card.banner} alt={card.pick} />
+                <div>
+                  {card.pick}: <span>{card.title}</span>
+                </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

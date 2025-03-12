@@ -12,7 +12,7 @@ function Sidebar() {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    fetch("/json/users.json")
+    fetch("/users.json")
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data.users)) {

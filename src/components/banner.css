@@ -165,3 +165,6 @@
 .mind > button:active {
     background: #284466;
 }
+.carousel-wrapper > a {
+    height: 100%;
+}
