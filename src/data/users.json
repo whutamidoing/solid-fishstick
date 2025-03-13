@@ -5,6 +5,8 @@
             "profPicture": "image.png",
             "profBanner":"20250221231301.png",
             "email": "raybendalemagallon@example.com",
+            "post": 0,
+            "bookmarks": [""],
             "status": "Active"
         },
         {
@@ -12,13 +14,17 @@
             "profPicture": "",
             "profBanner":"",
             "email": "",
+            "post": 0,
+            "bookmarks": [""],
             "status": "Offline"
         },
         {
             "username": "Bitch ass LUCIUS",
             "profPicture": "",
             "profBanner":"",
-            "email": "",    
+            "email": "",   
+            "post": 0,
+            "bookmarks": [""],
             "status": "Offline"
         }
     ]

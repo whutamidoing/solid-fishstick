@@ -16,7 +16,7 @@
     background-position: center;
     background-size: cover;
 }
-.user-details {
+.user-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -28,11 +28,10 @@
     height: 150px;
     padding: 20px;
 
-    box-shadow: #8f8f8f8a 0px 5px 20px 1px;
-    background-color: #e5e5e5;
+    background: linear-gradient(0deg, #f1f1f1, #dadada, #8b8b8b);
     color: #000;
     font-family: zh, Arial, Helvetica, sans-serif;
-    font-size: clamp(16px, 1em, 1.5rem);
+    font-size: clamp(16px, 2rem, 2.5rem);
     font-weight: bold;
 }
 .user {
@@ -43,6 +42,33 @@
     gap: 10px;
 }
 .email {
-    font-size: 0.8em;
+    font-size: 0.5em;
     font-weight: 100;
+}
+.user-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 12px 5%;
+    background: #fff;
+    box-shadow: #00000050 0px 2px 25px 5px;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+.user-stats span {
+    height: fit-content;
+}
+.user-stats > div {
+    display: flex;
+    gap: 2rem;
+}
+.user-stats span { 
+    font-weight: 1000;
+}
+#Bookmarks {
+    display: flex;
+    padding: 5%;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: zh, Arial, Helvetica, sans-serif;
 }
