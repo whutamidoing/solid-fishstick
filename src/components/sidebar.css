@@ -5,13 +5,14 @@
 
     background: #531fb5;
 }
-.avatar-wrapper > span {
+.avatar-wrapper > div > span {
     font-size: 14px;
-    text-align: center;
-    line-height: 50px;
     transition: ease 600ms;
     max-width: 100px;
     transform: scaleX(1);
+}
+.avatar-wrapper > div > span:last-of-type {
+    font-size: 10px
 }
 .icon{
     width: 50px;
@@ -80,7 +81,7 @@
     transition: 600ms;
 }
 .scrollers > a > li:hover { 
-    box-shadow: inset 20px 0px 12px -11px #a75e00;
+    box-shadow: inset 20px 0px 12px -11px #00a78b;
 }
 
 .list-group {
@@ -89,7 +90,7 @@
     gap: 20px;
 
     font-family: nms, 'Times New Roman', Times, serif;
-    color: #df8a00;
+    color: #00dfaf;
     font-size: 1.5rem;
     padding: 15px;
 
@@ -120,16 +121,28 @@
     overflow-x: hidden;
     opacity: 0;
 }
-.avatar-wrapper > span.hidden {
+.avatar-wrapper > div > span.hidden {
     max-width: 0;
     overflow-x: hidden;
     transform: scaleX(0);
     opacity: 0;
 }
+.user-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.user-details.hidden {
+    max-width: 0;
+    opacity: 0;
+    padding: 0;
+}
 
 .list-group > li > a {
+    display: block;
     text-decoration: none;
     color: inherit;
+    white-space: nowrap;
 }
 .list-group > li {
     text-align: center;

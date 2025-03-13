@@ -3,6 +3,7 @@
 @import url("/src/components/menu.css");
 @import url("/src/components/pages.css");
 @import url("/src/components/navbar.css");
+@import url("/src/components/userprofile.css");
 
 @font-face {
   font-family: zh;
@@ -69,6 +70,7 @@ div{
 */
 
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0; 
   box-sizing: border-box;

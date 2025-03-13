@@ -1,6 +1,7 @@
 import { ListGroup, Scroller } from "./ListGroup";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import userPic from "../assets/images/image.png";
+import users from "../data/users.json";
 
 interface User {
   username: string;
@@ -8,19 +9,8 @@ interface User {
 }
 
 function Sidebar() {
-  const [user, setUser] = useState<User[]>([]);
   const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    fetch("/users.json")
-      .then((response) => response.json())
-      .then((data) => {
-        if (Array.isArray(data.users)) {
-          setUser(data.users);
-        }
-      })
-      .catch((error) => console.error("Not working", error));
-  }, []);
+  const [userList] = useState<User[]>(users.users);
 
   return (
     <>
@@ -37,9 +27,14 @@ function Sidebar() {
             />
             <span className="icon-blob" />
           </div>
-          <span className={isHovered ? "" : "hidden"}>
-            {user.length > 0 ? user[0].username : "Loading..."}
-          </span>
+          <div className={`${isHovered ? "" : "hidden"} user-details`}>
+            <span className={isHovered ? "" : "hidden"}>
+              {userList.length > 0 ? userList[0].username : "Loading..."}
+            </span>
+            <span className={isHovered ? "" : "hidden"}>
+              {userList.length > 0 ? userList[0].email : ""}
+            </span>
+          </div>
         </div>
         <div className="list-wrapper">
           <Scroller />

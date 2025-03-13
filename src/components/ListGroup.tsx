@@ -11,7 +11,11 @@ interface ListGroupProps {
 }
 
 export function ListGroup({ isHovered }: ListGroupProps) {
-  let regions = [{ name: "Wish Simulator", link: "/wish-sim" }];
+  let regions = [
+    { name: "Wish Simulator", link: "/wish-sim" },
+    { name: "Top", link: "#Top" },
+    { name: "Titles", link: "#Titles" },
+  ];
 
   const message = regions.length === 0 ? <p>No Regions found</p> : null;
 
@@ -40,7 +44,6 @@ export function ListGroup({ isHovered }: ListGroupProps) {
 
 export function Scroller() {
   let scrollers = [
-    { name: "home", link: "/Page", svg: HomeIcon },
     { name: "userprofile", link: "User", svg: UserIcon },
     { name: "gallery", link: "Gallery", svg: GalleryIcon },
     { name: "favorites", link: "Bookmarks", svg: FavoritesIcon },

@@ -1,3 +1,10 @@
+.banner > h1 {
+    color: #fff;
+    font-family: zh, sans-serif;
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
 .banner {
     display: flex;
     flex-direction: column;

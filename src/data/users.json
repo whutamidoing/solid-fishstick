@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "username": "Dolphy",
+            "profPicture": "image.png",
+            "profBanner":"20250221231301.png",
+            "email": "raybendalemagallon@example.com",
+            "status": "Active"
+        },
+        {
+            "username": "King of Curses",
+            "profPicture": "",
+            "profBanner":"",
+            "email": "",
+            "status": "Offline"
+        },
+        {
+            "username": "Bitch ass LUCIUS",
+            "profPicture": "",
+            "profBanner":"",
+            "email": "",    
+            "status": "Offline"
+        }
+    ]
+}

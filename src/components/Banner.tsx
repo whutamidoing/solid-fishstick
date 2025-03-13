@@ -123,6 +123,7 @@ export function Banner() {
   return (
     <>
       <div className="banner">
+        <h1 id="Top">Top-Featured</h1>
         {TopFeatured()}
         {Carousel()}
       </div>
