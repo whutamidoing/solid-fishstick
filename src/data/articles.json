@@ -75,7 +75,7 @@
         },
         {
             "title": "Roblox New Features",
-            "platforms": ["Windows", "Mobile", "Xbox"],
+            "platforms": ["Windows", "Mobile"],
             "popularity": 10.2,
             "banner": "https://i.redd.it/iwjendnq58ed1.png",
             "link": "/Page",

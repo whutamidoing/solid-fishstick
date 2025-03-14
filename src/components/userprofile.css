@@ -3,7 +3,6 @@
     height: clamp(250px, 30vh, 40vh);
     background-position: center;
     background-size: cover;
-    padding: 0 10vw;
 }
 .profile-picture {
     min-width: 144px;
@@ -49,7 +48,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
     padding: 12px 5%;
     background: #fff;
     box-shadow: #00000050 0px 2px 25px 5px;
@@ -65,10 +63,53 @@
 .user-stats span { 
     font-weight: 1000;
 }
-#Bookmarks {
-    display: flex;
+.user-saves{
     padding: 5%;
+    padding-bottom: 15vh;
+    font-family: poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+#Bookmarks {
+    padding: 20px;
+    display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    font-family: zh, Arial, Helvetica, sans-serif;
+}
+#Bookmarks > .article-card {
+    width: 20%;
+    aspect-ratio: 1;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+#Bookmarks .article-details {
+    background: #ddd;
+    border-radius: 0;
+    color: #000;
+}
+#Bookmarks .cardImg {
+    border-radius: 0;
+}
+
+@media (max-width:801px){
+    .profile-picture {
+        width: 10vw;
+    }
+    .user > span {
+        font-size: 5vw;
+    }
+    .email {
+        font-size: 2.5vw !important;
+    }
+    .user-stats {
+        font-size: 4vw;
+    }
+    #Bookmarks {
+        flex-direction: column;
+    }
+    #Bookmarks .article-card {
+        width: 100%;
+        aspect-ratio: 0;
+    }
+    #Bookmarks .cardImg > img {
+        border-radius: 0;
+    }
 }

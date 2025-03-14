@@ -42,7 +42,7 @@
     flex-grow: 1;
     max-width: 50%;
     min-width: 200px;
-    max-height: 60%;
+    height: fit-content;
 }
 .article-details {
     padding: 10px;
@@ -59,4 +59,13 @@
 .platform-sections {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width:801px) {
+    .menu-wrapper {
+        padding-left: 20%;
+    }
+    .article-card {
+        max-width: 100% !important;
+    }
 }

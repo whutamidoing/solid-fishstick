@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import HomeIcon from "../assets/icons/home.svg?react";
 import UserIcon from "../assets/icons/person.svg?react";
 import GalleryIcon from "../assets/icons/image.svg?react";
@@ -44,9 +43,9 @@ export function ListGroup({ isHovered }: ListGroupProps) {
 
 export function Scroller() {
   let scrollers = [
-    { name: "userprofile", link: "User", svg: UserIcon },
-    { name: "gallery", link: "Gallery", svg: GalleryIcon },
-    { name: "favorites", link: "Bookmarks", svg: FavoritesIcon },
+    { name: "userprofile", link: "/User", svg: UserIcon },
+    { name: "gallery", link: "", svg: GalleryIcon },
+    { name: "favorites", link: "/User#Bookmarks", svg: FavoritesIcon },
     {
       name: "contact",
       link: "https://github.com/whutamidoing/solid-fishstick",

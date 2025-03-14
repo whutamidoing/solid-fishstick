@@ -175,3 +175,34 @@
 .carousel-wrapper > a {
     height: 100%;
 }
+
+@media (max-width:801px) {
+    .featured-wrapper{
+        flex-direction: column;
+        background: linear-gradient(0deg, #07111a, #1c2a3a, #151f2b, #202f41, #202f41);
+    }
+    .featured-description {
+        width: 100%;
+    }
+    .title-name {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+        width: 100%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .banner {
+        gap: 10px;
+    }
+    .card {
+        width: 100px;
+        font-size: 10px;
+    }
+    .carousel-wrapper {
+        flex-direction: column;
+    }
+    .mind {
+        padding-right: 5px;
+    }
+}

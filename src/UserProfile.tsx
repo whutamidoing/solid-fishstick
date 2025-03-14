@@ -1,7 +1,9 @@
 import users from "./data/users.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HomeIcon from "./assets/icons/home.svg?react";
 import { Link } from "react-router-dom";
+import articles from "./data/articles.json";
+import { ArticleCard } from "./components/ArticleMenu";
 
 interface User {
   username: string;
@@ -9,12 +11,27 @@ interface User {
   profBanner: string;
   profPicture: string;
   post: number;
-  bookmarks: Array<string>;
+  bookmarks: string[];
+}
+
+interface Article {
+  title: string;
+  platforms: string[];
+  popularity: number;
+  banner: string;
+  link: string;
+  contentPath: string;
 }
 
 function UserProfile() {
   const [userList] = useState<User[]>(users.users);
   const curruser = userList[0];
+
+  const [articleList] = useState<Article[]>(
+    articles.articles.filter((article) =>
+      curruser.bookmarks.includes(article.title)
+    )
+  );
 
   return (
     <>
@@ -43,8 +60,13 @@ function UserProfile() {
           </a>
         </div>
       </div>
-      <div id="Bookmarks">
+      <div className="user-saves">
         <h1>Saved</h1>
+        <div id="Bookmarks">
+          {articleList.map((article, index) => (
+            <ArticleCard key={index} {...article} />
+          ))}
+        </div>
       </div>
     </>
   );

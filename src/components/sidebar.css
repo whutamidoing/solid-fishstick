@@ -52,7 +52,7 @@
     height: 100vh;
     font-family: poppins;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
 }
 #searchbar {
     color: #fff;
@@ -174,4 +174,8 @@
 
 .list-group::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width:801px) {
+
 }

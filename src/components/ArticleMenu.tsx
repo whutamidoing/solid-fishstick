@@ -9,38 +9,20 @@ interface Article {
   banner: string;
   link: string;
   contentPath: string;
+  width?: string;
 }
 
-function ArticleCard({
+export function ArticleCard({
   title,
   platforms,
   popularity,
   banner,
   link,
   contentPath,
+  width,
 }: Article) {
-  const popularityValues = articles.articles.map(
-    (article) => article.popularity
-  );
-  const minPopularity = Math.min(...popularityValues);
-  const maxPopularity = Math.max(...popularityValues);
-
-  const scaledPopularity = Math.max(
-    minPopularity,
-    Math.min(popularity, maxPopularity)
-  );
-  const cardWidth =
-    ((scaledPopularity - minPopularity) / (maxPopularity - minPopularity)) *
-      40 +
-    10 +
-    "%";
-
-  const cardStyle = {
-    width: cardWidth,
-  };
-
   return (
-    <div className="article-card" style={cardStyle}>
+    <div className="article-card" style={width ? { width } : {}}>
       <Link
         to={link}
         state={{
@@ -67,6 +49,24 @@ function ArticleCard({
   );
 }
 
+function getCardWidth(popularity: number, popularityValues: number[]) {
+  const minPopularity = Math.min(...popularityValues);
+  const maxPopularity = Math.max(...popularityValues);
+
+  return (
+    ((popularity - minPopularity) / (maxPopularity - minPopularity)) * 40 +
+    10 +
+    "%"
+  );
+}
+
+export function ScaledCards(article: Article) {
+  const popularityValues = articles.articles.map((a) => a.popularity);
+  const cardWidth = getCardWidth(article.popularity, popularityValues);
+
+  return <ArticleCard {...article} width={cardWidth} />;
+}
+
 function ArticleMenu() {
   const [articleList] = useState<Article[]>(articles.articles);
 
@@ -75,7 +75,7 @@ function ArticleMenu() {
       <h1 id="Titles">Featured Titles</h1>
       <div className="card-container">
         {articleList.map((article, index) => (
-          <ArticleCard key={index} {...article}></ArticleCard>
+          <ScaledCards key={index} {...article}></ScaledCards>
         ))}
       </div>
     </div>
