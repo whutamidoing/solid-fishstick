@@ -55,7 +55,7 @@ function UserProfile() {
           <span>Follows: {curruser.bookmarks.length.toString()}</span>
         </div>
         <div className="home">
-          <a href="../">
+          <a href="/solid-fishstick/">
             <HomeIcon />
           </a>
         </div>

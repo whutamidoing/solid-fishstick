@@ -4,6 +4,8 @@
 @import url("/src/components/pages.css");
 @import url("/src/components/navbar.css");
 @import url("/src/components/userprofile.css");
+@import url("/src/components/gallery.css");
+@import url("/src/components/wish.css");
 
 @font-face {
   font-family: zh;

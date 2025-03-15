@@ -1,9 +1,8 @@
 function TopNavigationBar() {
   let nav = [
-    { name: "Home", link: "../" },
-    { name: "Gallery", link: "../" },
-    { name: "Favorites", link: "../" },
-    { name: "Wish Simulator", link: "../" },
+    { name: "Home", link: "/solid-fishstick/" },
+    { name: "Favorites", link: "/solid-fishstick/User#Bookmarks" },
+    { name: "Wish Simulator", link: "/solid-fishstick/wish-sim" },
   ];
   return (
     <>
