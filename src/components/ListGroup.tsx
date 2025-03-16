@@ -3,6 +3,7 @@ import UserIcon from "../assets/icons/person.svg?react";
 import GalleryIcon from "../assets/icons/image.svg?react";
 import FavoritesIcon from "../assets/icons/favorite.svg?react";
 import ContactIcon from "../assets/icons/mail.svg?react";
+import LiveIcon from "../assets/icons/vite.svg?react";
 
 interface ListGroupProps {
   isHovered: boolean;
@@ -49,6 +50,11 @@ export function Scroller() {
       name: "contact",
       link: "https://github.com/whutamidoing/solid-fishstick",
       svg: ContactIcon,
+    },
+    {
+      name: "live",
+      link: "https://whutamidoing.github.io/solid-fishstick/",
+      svg: LiveIcon,
     },
   ];
 
