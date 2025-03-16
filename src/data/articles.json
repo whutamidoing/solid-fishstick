@@ -14,7 +14,7 @@
             "popularity": 90,
             "banner": "https://i.ytimg.com/vi/Djtsw5k_DNc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCJBY-G1qnyUFHpoFnI563WzLD4zQ",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "eldenringmods.md"
             
         },
         {
@@ -23,7 +23,7 @@
             "popularity": 60.1,
             "banner": "https://media.wired.com/photos/645d15509a01d944fee35de1/master/w_2560%2Cc_limit/Zelda-Tears-Of-The-Kingdom-Culture-TotK_3rd_54.jpg",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "zeldatotk.md"
         },
         {
             "title": "Cyberpunk 2077 Phantom Liberty",
@@ -31,7 +31,7 @@
             "popularity": 45.3,
             "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHuRToNxnZGpYxksGGzttDvG4btNoSwMhXQ&s",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "cyberpunk.md"
         },
         {
             "title": "Minecraft RTX Update",
@@ -39,7 +39,7 @@
             "popularity": 30.7,
             "banner": "https://www.complementary.dev/assets/img/newScreenshots/unbound3_cherryRainbow.jpg",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "minecraftrtx.md"
         },
         {
             "title": "Bloodborne on PC",
@@ -47,7 +47,7 @@
             "popularity": 12.4,
             "banner": "https://www.well-played.com.au/wp-content/uploads/2021/01/Bloodborne-keyart1.jpg",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "bloodbornepc.md"
         },
         {
             "title": "Final Fantasy XVI DLC",
@@ -55,7 +55,7 @@
             "popularity": 38.2,
             "banner": "https://fyre.cdn.sewest.net/ff-xvi/637cf9194dc880a0db62c591/hero_bg-tT8XHFrO5.jpg?quality=85&width=3840",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "finalfantasyxvi.md"
         },
         {
             "title": "Elden Ring Expansion",
@@ -63,7 +63,7 @@
             "popularity": 25.1,
             "banner": "https://www.ungeek.ph/wp-content/uploads/2024/06/Shadow-of-the-Erdtree-NPCs-jpg.webp",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "eldenringdlc.md"
         },
         {
             "title": "Baldur's Gate 3 Multiplayer Guide",
@@ -71,7 +71,7 @@
             "popularity": 38.7,
             "banner": "https://www.theaureview.com/wp-content/uploads/2023/10/Baldurs-gate-3-chatacter-creation-guide.jpeg",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "baldursgate.md"
         },
         {
             "title": "Roblox New Features",
@@ -79,7 +79,7 @@
             "popularity": 10.2,
             "banner": "https://i.redd.it/iwjendnq58ed1.png",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "roblox.md"
         },
         {
             "title": "Genshin Impact New Characters",
@@ -87,7 +87,7 @@
             "popularity": 55.9,
             "banner": "20250221231301.png",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "genshin.md"
         },
         {
             "title": "Hollow Knight Silksong Update",
@@ -95,7 +95,7 @@
             "popularity": 35.8,
             "banner": "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2017/07/13/f35f87b7-93ee-4d30-935a-dbfdb77d22cd/hollow-knight-switch.jpg.jpg",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "hollowknight.md"
         },
         {
             "title": "Genshin Impact 4.5 Update",
@@ -103,7 +103,7 @@
             "popularity": 50.3,
             "banner": "476590787_122216339510035643_7352624109003515961_n.jpg",
             "link": "/Page",
-            "contentPath": "starfieldmod.md"
+            "contentPath": "genshinupdate.md"
         }
     ]
 }
