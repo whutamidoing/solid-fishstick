@@ -73,3 +73,15 @@
     background: #353535;
     border-radius: 10px;
 }
+
+@media (max-width:801px) {
+    .top-wrapper {
+        flex-direction: column;
+    }
+    .top-wrapper img {
+        width: 100%;
+    }
+    .image-wrapper-page {
+        padding: 0;
+    }
+}
