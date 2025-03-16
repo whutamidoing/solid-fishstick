@@ -1,0 +1,64 @@
+{
+    "item" : [
+        {
+         "name": "Furina",
+         "rarity" : 5,
+         "splashart": "/solid-fishstick/src/assets/banners/furina.webp"
+        },
+        {
+         "name": "Qiqi", 
+         "rarity" : 5, 
+         "splashart": "/solid-fishstick/src/assets/banners/furina.webp"
+        },
+        {
+         "name": "Favonius Codex",
+         "rarity": 4,
+         "splashart": "/solid-fishstick/src/assets/banners/favoniuscodex.webp"
+        },
+        {
+         "name": "Rust",
+         "rarity": 4,
+         "splashart": "/solid-fishstick/src/assets/banners/rust.webp"
+        },
+        {
+         "name": "The Stringless",
+         "rarity": 4, 
+         "splashart": "/solid-fishstick/src/assets/banners/stringless.webp"
+        },
+        {
+         "name": "Eye of Perception",
+         "rarity": 4, 
+         "splashart": "/solid-fishstick/src/assets/banners/eyeofperception.webp"
+        },
+        {
+         "name": "Sacrificial Fragment",
+         "rarity": 4, 
+         "splashart": "/solid-fishstick/src/assets/banners/sacrificialfragments.webp"
+        },
+        {
+         "name": "Cool Steel",
+         "rarity": 3, 
+         "splashart": "/solid-fishstick/src/assets/banners/cool-steel.webp"
+        },
+        { 
+         "name": "Slingshot",
+         "rarity": 3, 
+         "splashart": "/solid-fishstick/src/assets/banners/slingshot.webp"
+        },
+        {
+         "name": "Raven Bow",
+         "rarity": 3, 
+         "splashart": "/solid-fishstick/src/assets/banners/ravenbow.webp"
+        },
+        {
+         "name": "Emerald Orb",
+         "rarity": 3, 
+         "splashart": "/solid-fishstick/src/assets/banners/emeraldorb.webp"
+        },
+        {
+         "name": "Thrilling Tales of Dragon Slayers",
+         "rarity": 3, 
+         "splashart": "/solid-fishstick/src/assets/banners/thrillingtalesofdragonsslayers.webp"
+        }
+    ]
+}
