@@ -6,6 +6,7 @@
 @import url("/src/components/userprofile.css");
 @import url("/src/components/gallery.css");
 @import url("/src/components/wish.css");
+@import url("/src/components/login-form.css");
 
 @font-face {
   font-family: zh;
