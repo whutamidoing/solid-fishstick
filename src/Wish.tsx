@@ -2,6 +2,7 @@ import CloseIcon from "./assets/icons/close.svg?react";
 import Intertwined from "./assets/icons/Intertwined.png";
 import PullAnimation from "./assets/others/pull.mp4";
 import WishInventory from "./data/wish-inventory.json";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 interface Item {
@@ -129,9 +130,9 @@ function Wish() {
         <>
           <div className="blur" />
           <div className="full-banner">
-            <a className="close" href="/solid-fishstick/">
+            <Link className="close" to="/">
               <CloseIcon />
-            </a>
+            </Link>
             <div className="actual-banner">
               <div className="wish">
                 <div className="banner-label">Character Event Wish</div>

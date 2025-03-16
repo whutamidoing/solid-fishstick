@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 function TopNavigationBar() {
   let nav = [
-    { name: "Home", link: "/solid-fishstick/" },
-    { name: "Favorites", link: "/solid-fishstick/User#Bookmarks" },
-    { name: "Wish Simulator", link: "/solid-fishstick/wish-sim" },
+    { name: "Home", link: "/" },
+    { name: "Favorites", link: "/User#Bookmarks" },
+    { name: "Wish Simulator", link: "/wish-sim" },
   ];
   return (
     <>
@@ -12,7 +14,7 @@ function TopNavigationBar() {
           <ul className="link-list">
             {nav.map(({ name, link }) => (
               <li key={name}>
-                <a href={link}>{name}</a>
+                <Link to={link}>{name}</Link>
               </li>
             ))}
           </ul>

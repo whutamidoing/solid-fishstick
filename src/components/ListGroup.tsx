@@ -10,7 +10,7 @@ interface ListGroupProps {
 
 export function ListGroup({ isHovered }: ListGroupProps) {
   let regions = [
-    { name: "Wish Simulator", link: "/solid-fishstick/wish-sim" },
+    { name: "Wish Simulator", link: "/wish-sim" },
     { name: "Top", link: "#Top" },
     { name: "Titles", link: "#Titles" },
   ];
@@ -31,9 +31,9 @@ export function ListGroup({ isHovered }: ListGroupProps) {
           key={region.name}
           className={region.name == "Legend" ? "legend" : ""}
         >
-          <a key={region.link} href={`${region.link}`}>
+          <Link key={region.link} to={`${region.link}`}>
             {region.name}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
