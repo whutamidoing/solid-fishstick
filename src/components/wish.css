@@ -152,3 +152,32 @@
     width: 100%;
     height: 100%;
 }
+
+@media (max-width:801px) {
+    .actual-banner {
+        width: 80%;
+    }
+    .banner-label {
+        font-size: 2vw;
+        padding: 3px;
+        padding-right: 5px;
+    }
+    .banner-details > h3{
+        font-size: 2vw;
+    }
+    .banner-rules{
+        padding: 3%;
+        font-size: 1.2vw;
+    }
+    .exclusion {
+        font-size: 1.2vw;
+    }
+    .blur {
+        background-size: cover;
+        background-position: center;
+    }
+    .pull-background {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}

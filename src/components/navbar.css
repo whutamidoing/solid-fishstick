@@ -46,3 +46,10 @@
     display: block;
     padding: 10px 50px;
 }
+@media (max-width:801px) {
+    .link-list a {
+        font-size: 3vw;
+        display: block;
+        padding: 5% 5vw;
+    }
+}

@@ -18,11 +18,14 @@ function PullCollection({ onClose }: { onClose: () => void }) {
   );
 
   const getRandomItemByRarity = (value: number) => {
+    //rarity system 5 = 2% 4 = 10%
     let rarity = 3;
     if (value >= 98) rarity = 5;
     else if (value >= 90) rarity = 4;
 
+    //look for item from rarity system depending on rarity
     const filteredItems = itemList.filter((item) => item.rarity === rarity);
+    //random pick from rarity
     return filteredItems[Math.floor(Math.random() * filteredItems.length)];
   };
   return (
