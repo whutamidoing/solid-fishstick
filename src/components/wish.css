@@ -1,3 +1,6 @@
+html * {
+    cursor: url("../assets/banners/cursor.png"), auto;
+}
 .full-banner {
     display: flex;
     justify-content: center;
@@ -14,8 +17,8 @@
     background: #20202005;
 }
 .blur {
-    background-image: url("../assets/banners/pull.jpg");
-    background-size: 110%;
+    background-image: url("../assets/banners/wish.webp");
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;   
@@ -89,25 +92,32 @@
 #PullButton{
     font-family: zh, Arial, Helvetica, sans-serif;
     color: #a39277;
-    padding: 5px 60px;
+    padding: 15px 80px;
 
     position: absolute;
     right: 20px;
     bottom: 20px;
 
-    background: #f7f7e4;
+    background: #ffffff00;
+    background-image: url("../assets/banners/button.webp");
+    background-position: center;
+    background-size: 100% 100%;
+    border: 0;
+
+    /* background: #f7f7e4;
     border-radius: 50px 50px 50px 50px;
     border: 2px solid #a39277;
     border-left: 4px solid #a39277;
-    border-right: 4px solid #a39277;
+    border-right: 4px solid #a39277; */
     transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 #PullButton:hover {
-    background: #d6d1b4;
+    transform: scale(1.05);
+    /* background: #d6d1b4; */
 }
-#PullButton:active{
+/* #PullButton:active{
     background: #faf9f6;
-}
+} */
 #PullButton > div {
     display: flex;
     align-items: center;
